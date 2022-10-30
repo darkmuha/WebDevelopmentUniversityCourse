@@ -228,7 +228,8 @@ section {
   padding: 0 50px;
 }
 .section-card {
-  background: #fdfffcff;
+  /* background: #fdfffcff; */
+  color: #fdfffce6;
   box-sizing: border-box;
   display: flex;
   justify-self: center;
@@ -255,13 +256,13 @@ section:nth-child(3) {
 
 .text-card h2,
 .text-card p {
-  padding-bottom: 1.2rem;
+  padding-bottom: 2rem;
 }
 
 .card-btn {
   font-size: 2rem;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 14px 32px;
   max-height: 100%;
   border: none;
   outline: none;
@@ -269,8 +270,17 @@ section:nth-child(3) {
   background: #ff6047ff;
   background-image: linear-gradient(to top, #99221eff 0%, #ff6047ff 100%);
   color: #fdfffcff;
+  cursor: pointer;
 }
 
+.card-btn:hover {
+  color: #000000ff;
+  transition: all 0.1s;
+}
+.card-btn:hover {
+  background: #fdfffcff;
+  transition: all 0.3s ease;
+}
 /* The Footer Section
 ********************************************/
 footer {
