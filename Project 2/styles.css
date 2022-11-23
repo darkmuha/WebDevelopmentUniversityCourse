@@ -235,7 +235,7 @@ section {
   justify-self: center;
   align-items: center;
   margin: 0 auto 0;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 0 1rem;
 }
 
@@ -518,6 +518,26 @@ footer {
 
   #img2 {
     display: none;
+  }
+
+  .section-card {
+    position: relative;
+  }
+  .section-card:nth-child(even) img {
+    padding: 0;
+    max-width: 100%;
+  }
+  .section-card:nth-child(odd) img {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .text-card {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    margin-right: 50px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
   }
 }
 @media screen and (max-width: 820px) {
