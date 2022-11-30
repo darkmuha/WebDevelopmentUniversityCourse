@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent-A-Car</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3ad96f82a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- The Navigation Bar
+    ----------------------------------------------------------------------->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#hero-section" id="navbar-logo">
+          <i class="fa-solid fa-car"></i>
+          Rent-A-Car
+        </a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item underLine deals">
+            <a href="#deals" class="navbar-links">Deals</a>
+          </li>
+          <li class="navbar-item underLine staff">
+            <a href="#staff" class="navbar-links">Staff</a>
+          </li>
+          <li class="navbar-item underLine about-us">
+            <a href="#about-us" class="navbar-links">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#8636;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#8641;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="images/Picture1.jpg" alt="Picture 1" />
+          </li>
+          <li class="slide">
+            <img src="images/Picture2.jpg" alt="Picture 2" />
+          </li>
+          <li class="slide">
+            <img src="images/Picture3.jpg" alt="Picture 3" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="contact-info">
+        <h2>Contact Info:</h2>
+        <ul class="alt">
+          <li>
+            <span class="fa fa-envelope-o"></span>
+            contact@company.com
+          </li>
+          <li><span class="fa fa-phone"></span> +387 12 345 678</li>
+          <li>
+            <span class="fa fa-map-pin"></span> 123 Some Address, Some Country.
+          </li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a href="/" class="footer-logo">
+              <i class="fa-solid fa-scissors"></i> Cut
+            </a>
+          </div>
+          <p class="website-rights">&copy;Cut 2022, All rights reserved</p>
+          <div class="social-icons">
+            <!--target = "_blank makes it so that the link opens in a new tab"-->
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

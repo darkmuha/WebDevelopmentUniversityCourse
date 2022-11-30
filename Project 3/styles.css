@@ -86,44 +86,6 @@ ul {
   transition: 0.3 ease border-bottom;
 }
 
-.navbar-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 12px;
-  background: #d9c6b0;
-  background-image: linear-gradient(to top, #8c6746 0%, #d9c6b0 100%);
-  color: #fdfffcff;
-}
-
-/* .btn:hover {
-  background: #000000ff;
-  transition: color 0.3s ease;
-} */
-.btn:hover {
-  color: #d9c6b0;
-  transition: color 0.1s ease;
-}
-.navbar-links:hover {
-  /* background: #8C6746; */
-  color: #d9c6b0;
-  transition: all 0.3s ease;
-}
-
 @media screen and (max-width: 960px) {
   .navbar-container {
     display: flex;
