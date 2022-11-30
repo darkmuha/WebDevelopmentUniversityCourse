@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3ad96f82a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cut</title>
+  </head>
+  <body>
+    <!-- The Navigation Bar
+    ----------------------------------------------------------------------->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#hero-section" id="navbar-logo">
+          <i class="fa-solid fa-scissors"></i>
+          Cut
+        </a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item underLine deals">
+            <a href="#deals" class="navbar-links">Deals</a>
+          </li>
+          <li class="navbar-item underLine staff">
+            <a href="#staff" class="navbar-links">Staff</a>
+          </li>
+          <li class="navbar-item underLine about-us">
+            <a href="#about-us" class="navbar-links">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--The hero section ----------------------
+    -->
+
+    <div class="hero-section" id="hero-section">
+      <div>
+        <h1>Welcome to cuts</h1>
+        <h2>
+          Book an appointment with us, Save time and money by knowing it all
+        </h2>
+        <button class="heroBtn">Book now</button>
+      </div>
+    </div>
+
+    <!--Deals ----------------
+    -->
+    <section class="sections-colors" id="deals">
+      <div class="sections">
+        <img src="./images/Picture2.jpg" alt="Deals picture" />
+        <div class="section-text">
+          <h2>Deals</h2>
+          <h3>Where best offers lie</h3>
+          <p>Here we offer our best offers to all locals</p>
+          <button class="dealsBtn">Book</button>
+        </div>
+      </div>
+    </section>
+    <!--Staff ----------------
+    -->
+    <section class="sections-colors" id="staff">
+      <div class="sections">
+        <img src="./images/Picture3.jpg" alt="about-us picture" />
+        <div class="section-text">
+          <h2>Staff</h2>
+          <h3>The most important</h3>
+          <p>Here is where the most important decision is. Picking a barber</p>
+          <button class="staffsBtn">Learn more</button>
+        </div>
+      </div>
+    </section>
+
+    <!--About us ----------------
+    -->
+    <section class="sections-colors" id="about-us">
+      <div class="sections">
+        <img src="./images/Picture4.jpg" alt="about-us picture" />
+        <div class="section-text">
+          <h2>About us</h2>
+          <h3>Simplicity is the key</h3>
+          <p>Booking barber appointments made easier by Cut</p>
+          <button class="aboutsBtn">History</button>
+        </div>
+      </div>
+    </section>
+    <!-- The Footer Section
+    ----------------------------------------------------------------------->
+    <footer>
+      <div class="contact-info">
+        <h2>Contact Info:</h2>
+        <ul class="alt">
+          <li>
+            <span class="fa fa-envelope-o"></span>
+            contact@company.com
+          </li>
+          <li><span class="fa fa-phone"></span> +387 12 345 678</li>
+          <li>
+            <span class="fa fa-map-pin"></span> 123 Some Address, Some Country.
+          </li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a href="/" class="footer-logo">
+              <i class="fa-solid fa-scissors"></i> Cut
+            </a>
+          </div>
+          <p class="website-rights">&copy;Cut 2022, All rights reserved</p>
+          <div class="social-icons">
+            <!--target = "_blank makes it so that the link opens in a new tab"-->
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
