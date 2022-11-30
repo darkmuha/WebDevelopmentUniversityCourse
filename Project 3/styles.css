@@ -151,25 +151,6 @@ ul {
     transform: translate(5%, 20%);
   }
 
-  .navbar-btn {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
-
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-  }
-
-  .navbar-toggle .bar {
-    display: block;
-    cursor: pointer;
-  }
-
   /*
   the x effect
   */
@@ -226,6 +207,7 @@ ul {
   border-radius: 15px;
   padding: 6px 20px 6px;
   margin-top: 0.3em;
+  cursor: pointer;
 }
 
 .sections {
@@ -306,6 +288,7 @@ section img {
   border-radius: 15px;
   padding: 6px 20px 6px;
   margin-top: 0.3em;
+  cursor: pointer;
 }
 
 /* The Footer Section
