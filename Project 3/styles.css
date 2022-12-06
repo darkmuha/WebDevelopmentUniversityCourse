@@ -213,6 +213,7 @@ ul {
   padding: 6px 20px 6px;
   margin-top: 0.3em;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .sections {
@@ -284,7 +285,9 @@ section img {
   margin-top: 0.3em auto 0.3em;
 }
 
-.section-text button {
+.section-text button,
+.section-text button a {
+  text-decoration: none;
   text-align: center;
   color: #fff;
   font-size: 3rem;
@@ -294,11 +297,46 @@ section img {
   padding: 6px 20px 6px;
   margin-top: 0.3em;
   cursor: pointer;
-  transition: all 1s ease;
+  transition: all 0.2s ease;
 }
 
-.section-text button:hover {
+.section-text button:hover,
+.hero-section button:hover {
   transform: scale(1.05) perspective(1px);
+}
+
+.main-about-us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-about-us h1 {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.main-about-us p {
+  max-width: 90%;
+  /* max-width: 1400px; */
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.main-about-us .mapouter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /* The Footer Section

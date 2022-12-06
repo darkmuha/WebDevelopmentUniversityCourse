@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Rankings</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="card-styles.css" />
     <script
       src="https://kit.fontawesome.com/3ad96f82a9.js"
       crossorigin="anonymous"
@@ -23,7 +24,7 @@
     ----------------------------------------------------------------------->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="/" id="navbar-logo">
+        <a href="./index.html" id="navbar-logo">
           <i class="fa-solid fa-pizza-slice fa-pizza"></i>
           PR
         </a>
@@ -34,23 +35,150 @@
         </div>
         <ul class="navbar-menu">
           <li class="navbar-item">
-            <a href="/pizzas.html" class="navbar-links">Pizza</a>
+            <a href="./pizzas.html" class="navbar-links">Pizza</a>
           </li>
           <li class="navbar-item">
-            <a href="/deals.html" class="navbar-links">Deals</a>
+            <a href="./restaurants.html" class="navbar-links">Restaurants</a>
           </li>
           <li class="navbar-item">
-            <a href="/restaurants.html" class="navbar-links">Restaurants</a>
+            <a href="./deals.html" class="navbar-links">Deals</a>
           </li>
           <li class="navbar-item">
-            <a href="/about-us.html" class="navbar-links">About us</a>
+            <a href="./about-us.html" class="navbar-links">About us</a>
           </li>
           <li class="navbar-btn">
-            <a href="/" class="btn">Review</a>
+            <a href="./index.html" class="btn">Review</a>
           </li>
         </ul>
       </div>
     </nav>
-    <h1>Deals Page</h1>
+    <!-- The Main Section
+    ----------------------------------------------------------------------->
+    <main class="main-cars">
+      <section class="card">
+        <img src="images/Picture8.jpg" alt="Nuggets, Pie, Pizza, and Fries." />
+        <div class="card-content">
+          <h2>The NPPF Deal</h2>
+          <p class="some-text">
+            Nuggets, Pie, Pizza, and Fries. One of our favorite deals!
+          </p>
+          <button class="btn">EAT ME</button>
+        </div>
+      </section>
+      <section class="card">
+        <img src="images/Picture11.jpg" alt="Drink or Eat?" />
+        <div class="card-content">
+          <h2>Drink or Eat?</h2>
+          <p class="some-text">
+            Pizza with a relable drink of choice for a good price.
+          </p>
+          <button class="btn">EAT ME</button>
+        </div>
+      </section>
+      <section class="card">
+        <img src="images/Picture13.jpg" alt="Tripple or nothing" />
+        <div class="card-content">
+          <h2>Tripple or nothing</h2>
+          <p class="some-text">
+            This deal is perfect for a group of friends (granted whoever is
+            reading this has any)
+          </p>
+          <button class="btn">EAT ME</button>
+        </div>
+      </section>
+      <section class="card">
+        <img src="images/Picture12.jpg" alt="The Slice" />
+        <div class="card-content">
+          <h2>The Slice</h2>
+          <p class="some-text">
+            One pizza for only 1.5km at the school's cafeteria.
+          </p>
+          <button class="btn">EAT ME</button>
+        </div>
+      </section>
+    </main>
+    <!-- The Footer Section
+    ----------------------------------------------------------------------->
+    <footer>
+      <div class="footer-links">
+        <div class="footer-links-wrapper">
+          <div class="footer-link-items">
+            <h2>About us</h2>
+            <a href="./about-us.html">How it works</a>
+            <a href="./about-us.html">Why pizza</a>
+            <a href="./about-us.html">Who is this for</a>
+          </div>
+          <div class="footer-link-items">
+            <h2>Deals</h2>
+            <a href="./deals.html">Deals of the week</a>
+            <a href="./deals.html">Sweet pizza steals</a>
+            <a href="./deals.html">Family deals</a>
+          </div>
+          <div class="footer-link-items">
+            <h2>Contact us</h2>
+            <a href="./about-us.html">Contact</a>
+            <a href="./about-us.html">Support</a>
+          </div>
+          <div class="footer-link-items">
+            <h2>Social media</h2>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.youtube.com">Youtube</a>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a href="./index.html" class="footer-logo">
+              <i class="fa-solid fa-pizza-slice fa-pizza"></i> PR
+            </a>
+          </div>
+          <p class="website-rights">
+            &copy;Pizza Rankings 2022, All rights reserved
+          </p>
+          <div class="social-icons">
+            <!--target = "_blank makes it so that the link opens in a new tab"-->
+            <a
+              href="https://www.facebook.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -4,8 +4,6 @@ const sections = document.querySelectorAll('section')
 const navigationList = document.querySelectorAll('.navbar-item')
 const herosButton = document.querySelector('.heroBtn')
 const dealsButton = document.querySelector('.dealsBtn')
-const staffsButton = document.querySelector('.staffsBtn')
-const aboutsButton = document.querySelector('.aboutsBtn')
 
 herosButton.addEventListener('click', () => {
   herosButton.textContent = 'Book me! Button Clicked'
@@ -13,14 +11,6 @@ herosButton.addEventListener('click', () => {
 
 dealsButton.addEventListener('click', () => {
   dealsButton.textContent = 'Book, Button Clicked'
-})
-
-staffsButton.addEventListener('click', () => {
-  staffsButton.textContent = 'Learn More, Button Clicked'
-})
-
-aboutsButton.addEventListener('click', () => {
-  aboutsButton.textContent = 'History, Button Clicked'
 })
 
 menu.addEventListener('click', () => {

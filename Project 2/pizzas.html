@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Rankings</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="card-styles.css" />
     <script
       src="https://kit.fontawesome.com/3ad96f82a9.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +25,7 @@
     ----------------------------------------------------------------------->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="/" id="navbar-logo">
+        <a href="./index.html" id="navbar-logo">
           <i class="fa-solid fa-pizza-slice fa-pizza"></i>
           PR
         </a>
@@ -34,23 +36,136 @@
         </div>
         <ul class="navbar-menu">
           <li class="navbar-item">
-            <a href="/pizzas.html" class="navbar-links">Pizza</a>
+            <a href="./pizzas.html" class="navbar-links">Pizza</a>
           </li>
           <li class="navbar-item">
-            <a href="/deals.html" class="navbar-links">Deals</a>
+            <a href="./restaurants.html" class="navbar-links">Restaurants</a>
           </li>
           <li class="navbar-item">
-            <a href="/restaurants.html" class="navbar-links">Restaurants</a>
+            <a href="./deals.html" class="navbar-links">Deals</a>
           </li>
           <li class="navbar-item">
-            <a href="/about-us.html" class="navbar-links">About us</a>
+            <a href="./about-us.html" class="navbar-links">About us</a>
           </li>
           <li class="navbar-btn">
-            <a href="/" class="btn">Review</a>
+            <a href="./index.html" class="btn">Review</a>
           </li>
         </ul>
       </div>
     </nav>
-    <h1>Pizza Page</h1>
+    <!-- The Main Section
+    ----------------------------------------------------------------------->
+    <main class="main-cars">
+      <section class="card">
+        <img src="images/Picture10.jpg" alt="Mushroom Pizza" />
+        <div class="card-content">
+          <p class="rank">#1</p>
+          <h2>Mushroom Pizza</h2>
+          <p class="some-text">For mushrooms lovers and vegans.</p>
+          <button class="btn">BUY ME</button>
+        </div>
+      </section>
+      <section class="card">
+        <img src="images/Picture9.jpg" alt="Spaghetti Pizza" />
+        <div class="card-content">
+          <p class="rank">#2</p>
+          <h2>Spaghetti Pizza</h2>
+          <p class="some-text">For spaghetti lovers and risk takers</p>
+          <button class="btn">BUY ME</button>
+        </div>
+      </section>
+      <section class="card">
+        <img src="images/PineapplePizza.jpg" alt="Pepperoni Pineapple Pizza" />
+        <div class="card-content">
+          <p class="rank">#3</p>
+          <h2>Pepperoni Pineapple Pizza</h2>
+          <p class="some-text">This car is perfect for enthusiasts.</p>
+          <button class="btn">BUY ME</button>
+        </div>
+      </section>
+    </main>
+    <!-- The Footer Section
+    ----------------------------------------------------------------------->
+    <footer>
+      <div class="footer-links">
+        <div class="footer-links-wrapper">
+          <div class="footer-link-items">
+            <h2>About us</h2>
+            <a href="./about-us.html">How it works</a>
+            <a href="./about-us.html">Why pizza</a>
+            <a href="./about-us.html">Who is this for</a>
+          </div>
+          <div class="footer-link-items">
+            <h2>Deals</h2>
+            <a href="./deals.html">Deals of the week</a>
+            <a href="./deals.html">Sweet pizza steals</a>
+            <a href="./deals.html">Family deals</a>
+          </div>
+          <div class="footer-link-items">
+            <h2>Contact us</h2>
+            <a href="./about-us.html">Contact</a>
+            <a href="./about-us.html">Support</a>
+          </div>
+          <div class="footer-link-items">
+            <h2>Social media</h2>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.twitter.com">Twitter</a>
+            <a href="https://www.youtube.com">Youtube</a>
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a href="./index.html" class="footer-logo">
+              <i class="fa-solid fa-pizza-slice fa-pizza"></i> PR
+            </a>
+          </div>
+          <p class="website-rights">
+            &copy;Pizza Rankings 2022, All rights reserved
+          </p>
+          <div class="social-icons">
+            <!--target = "_blank makes it so that the link opens in a new tab"-->
+            <a
+              href="https://www.facebook.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              class="social-icon-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
