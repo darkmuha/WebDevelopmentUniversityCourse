@@ -1,13 +1,29 @@
+/*
+$phthalo-green: #0a210fff;
+$lincoln-green: #14591dff;
+$citron: #99aa38ff;
+$green-yellow-crayola: #e1e289ff;
+$uranian-blue: #acd2edff;
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Carter One', cursive;
+}
+body {
+  background: #e1e289ff;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
-  background: #000000ff;
-  height: 80px;
+  background: #e1e289ff;
+  height: 6vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +38,7 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 6vh;
   z-index: 1;
   width: 100%;
   max-width: 1400px;
@@ -31,8 +47,8 @@
 }
 
 #navbar-logo {
-  background-color: #99221eff;
-  background-image: linear-gradient(to top, #99221eff 0%, #ff6047ff 100%);
+  background-color: #0a210fff;
+  background-image: linear-gradient(to top, #0a210fff 0%, #14591dff 100%);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -46,7 +62,7 @@
   font-size: 2rem;
 }
 
-.fa-pizza {
+.fa-car {
   margin-right: 0.1rem;
 }
 
@@ -62,7 +78,7 @@
 }
 
 .navbar-links {
-  color: #fdfffcff;
+  color: #14591dff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,44 +87,164 @@
   height: 100%;
 }
 
-.navbar-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 12px;
-  background: #ff6047ff;
-  background-image: linear-gradient(to top, #99221eff 0%, #ff6047ff 100%);
-  color: #fdfffcff;
-}
-
-.btn:hover {
-  background: #000000ff;
-  transition: color 0.3s ease;
-}
-.btn:hover {
-  color: #ff6047ff;
-  transition: color 0.1s ease;
-}
 .navbar-links:hover {
-  /* background: #99221eff; */
-  color: #ff6047ff;
+  /* background: #0a210fff; */
+  color: #14591dff;
   transition: all 0.3s ease;
 }
 
+/* The Slider Section
+********************************************/
+.carousel {
+  width: 100%;
+  height: 73.7vh;
+  position: relative;
+  margin: 0;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.2s opacity ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+/* The Footer Section
+********************************************/
+footer {
+  background-color: #e1e289ff;
+  padding: 1rem 0 1.5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-info h2,
+.contact-info li {
+  color: #14591dff;
+  font-size: 1rem;
+}
+
+.contact-info h2 {
+  color: #0a210fff;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  color: #14591dff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* The icons in the footer section
+********************************************/
+
+.social-icon-link {
+  color: #14591dff;
+  font-size: 24px;
+}
+
+.social-media {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.social-icons a:hover {
+  color: #99aa38ff;
+  transition: 0.3s ease-out;
+}
+
+.social-logo {
+  color: #14591dff;
+  justify-self: flex-start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.website-rights {
+  font-size: 1rem;
+  color: #14591dff;
+}
 @media screen and (max-width: 960px) {
   .navbar-container {
     display: flex;
@@ -129,13 +265,13 @@
     top: -1000px;
     opacity: 0;
     transition: all 0.3s ease;
-    height: 100vh;
+    max-height: 100vh;
     z-index: -1;
     background-color: #000000ff;
   }
 
   .navbar-menu.active {
-    background: #000000ff;
+    background: #e1e289ff;
     top: 100%;
     opacity: 1;
     transition: all 0.3s ease;
@@ -153,7 +289,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #fdfffcff;
+    background: #14591dff;
   }
 
   .navbar-item {
@@ -174,20 +310,6 @@
     transform: translate(5%, 20%);
   }
 
-  .navbar-btn {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
-
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-  }
-
   .navbar-toggle .bar {
     display: block;
     cursor: pointer;
@@ -205,5 +327,61 @@
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .carousel-button {
+    top: 40%;
+  }
+
+  footer {
+    font-size: 0.2rem;
+  }
+
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+  .contact-info li {
+    font-size: 1rem;
+  }
+
+  .footer-logo {
+    font-size: 1.6rem;
+  }
+
+  .social-icon-link {
+    font-size: 21px;
+  }
+
+  .social-icons {
+    width: 200px;
+  }
+
+  .website-rights {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .carousel-button {
+    top: 30%;
+    font-size: 2.6rem;
+  }
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-media-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .carousel-button {
+    top: 20%;
+    font-size: 2rem;
   }
 }

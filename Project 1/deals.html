@@ -16,9 +16,8 @@
     ----------------------------------------------------------------------->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="./index.html" id="navbar-logo">
-          <i class="fa-solid fa-car"></i>
-          Rent-A-Car
+        <a href="#hero-section" id="navbar-logo">
+          <i class="fa-solid fa-car"></i> Rent-A-Car
         </a>
         <div class="navbar-toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -26,18 +25,68 @@
           <span class="bar"></span>
         </div>
         <ul class="navbar-menu">
-          <li class="navbar-item">
+          <li class="navbar-item underLine deals">
+            <a href="./deals.html" class="navbar-links">Deals</a>
+          </li>
+          <li class="navbar-item underLine staff">
+            <a href="./dealers.html" class="navbar-links">Dealers</a>
+            <!-- Used to be Partners -->
+          </li>
+          <li class="navbar-item underLine staff">
             <a href="./cars.html" class="navbar-links">Cars</a>
           </li>
-          <li class="navbar-item">
-            <a href="/partners.html" class="navbar-links">Partners</a>
-          </li>
-          <li class="navbar-item">
+          <li class="navbar-item underLine about-us">
             <a href="./about-us.html" class="navbar-links">About us</a>
           </li>
         </ul>
       </div>
     </nav>
-    <h1>Deals Page</h1>
+    <h1>Deals</h1>
+    <!-- The Footer Section
+    ----------------------------------------------------------------------->
+    <footer>
+      <div class="contact-info">
+        <h2>Contact Info:</h2>
+        <ul class="alt">
+          <li>
+            <span class="fa fa-envelope-o"></span>
+            contact@company.com
+          </li>
+          <li><span class="fa fa-phone"></span> +387 12 345 678</li>
+          <li>
+            <span class="fa fa-map-pin"></span> 123 Some Address, Some Country.
+          </li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <div class="social-media-wrap">
+          <div class="footer-logo">
+            <a href="/" class="footer-logo">
+              <i class="fa-solid fa-car"></i> Rent-A-Car
+            </a>
+          </div>
+          <p class="website-rights">&copy;Cut 2022, All rights reserved</p>
+          <div class="social-icons">
+            <!--target = "_blank makes it so that the link opens in a new tab"-->
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="/" class="social-icon-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>

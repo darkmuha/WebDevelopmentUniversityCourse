@@ -10,6 +10,12 @@
       src="https://kit.fontawesome.com/3ad96f82a9.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- The Navigation Bar
@@ -26,20 +32,50 @@
         </div>
         <ul class="navbar-menu">
           <li class="navbar-item underLine deals">
-            <a href="#deals" class="navbar-links">Deals</a>
+            <a href="./deals.html" class="navbar-links">Deals</a>
           </li>
           <li class="navbar-item underLine staff">
-            <a href="#staff" class="navbar-links">Staff</a>
+            <a href="./dealers.html" class="navbar-links">Dealers</a>
+            <!-- Used to be Partners -->
+          </li>
+          <li class="navbar-item underLine staff">
+            <a href="./cars.html" class="navbar-links">Cars</a>
           </li>
           <li class="navbar-item underLine about-us">
-            <a href="#about-us" class="navbar-links">About us</a>
+            <a href="./about-us.html" class="navbar-links">About us</a>
           </li>
         </ul>
       </div>
     </nav>
-    <!--The hero section ----------------------
-    -->
-
+    <!-- The Slider Section
+    ----------------------------------------------------------------------->
+    <section aria-label="Car Pictures">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#8636;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#8641;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="images/Picture1.jpg" alt="Picture 1" />
+          </li>
+          <li class="slide">
+            <img src="images/Picture2.jpg" alt="Picture 2" />
+          </li>
+          <li class="slide">
+            <img src="images/Picture3.jpg" alt="Picture 3" />
+          </li>
+          <li class="slide">
+            <img src="images/Picture4.jpg" alt="Picture 4" />
+          </li>
+          <li class="slide">
+            <img src="images/Picture5.jpg" alt="Picture 5" />
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- The Footer Section
     ----------------------------------------------------------------------->
     <footer>

@@ -1,7 +1,7 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar-menu')
 const sections = document.querySelectorAll('section')
-const navigationList = document.querySelectorAll('.underLine')
+const navigationList = document.querySelectorAll('.navbar-item')
 const herosButton = document.querySelector('.heroBtn')
 const dealsButton = document.querySelector('.dealsBtn')
 const staffsButton = document.querySelector('.staffsBtn')
@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop
     // const sectionHeight = section.clientHeight
-    if (pageYOffset > sectionTop) {
+    if (scrollY + 5 > sectionTop) {
       curr = section.getAttribute('id')
     }
   })
