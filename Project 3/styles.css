@@ -444,6 +444,13 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .social-icons {
+    padding-top: 5px;
+  }
+
+  .website-rights {
+    padding-top: 5px;
+  }
 }
 
 @media screen and (max-width: 440px) {

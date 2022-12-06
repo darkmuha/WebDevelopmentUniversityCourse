@@ -1,19 +1,20 @@
 /*
-$phthalo-green: #0a210fff;
-$lincoln-green: #14591dff;
-$citron: #99aa38ff;
-$green-yellow-crayola: #e1e289ff;
-$uranian-blue: #acd2edff;
+$phthalo-green: white;
+$lincoln-green: #C4FDFB;
+$citron: #376CA9;
+$green-yellow-crayola: #000352;
+$honeydew: #f0fff6ff;
 */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Carter One', cursive;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.03em;
 }
 body {
-  background: #e1e289ff;
+  background: #000352;
 }
 ul {
   list-style-type: none;
@@ -22,7 +23,7 @@ ul {
 }
 
 .navbar {
-  background: #e1e289ff;
+  background: #000352f2;
   height: 6vh;
   display: flex;
   justify-content: center;
@@ -47,8 +48,8 @@ ul {
 }
 
 #navbar-logo {
-  background-color: #0a210fff;
-  background-image: linear-gradient(to top, #0a210fff 0%, #14591dff 100%);
+  background-color: white;
+  background-image: linear-gradient(to top, #c4fdfb 0%, white 100%);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -74,11 +75,11 @@ ul {
 }
 
 .navbar-item {
-  height: 80px;
+  height: 100%;
 }
 
 .navbar-links {
-  color: #14591dff;
+  color: #c4fdfb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,8 +89,8 @@ ul {
 }
 
 .navbar-links:hover {
-  /* background: #0a210fff; */
-  color: #14591dff;
+  background: #070029;
+  color: #c4fdfb;
   transition: all 0.3s ease;
 }
 
@@ -106,7 +107,7 @@ ul {
   inset: 0;
   opacity: 0;
   transition: 0.2s opacity ease-in-out;
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .slide img {
@@ -156,10 +157,46 @@ ul {
   right: 1rem;
 }
 
+.main-about-us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-about-us h1 {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main-about-us p {
+  max-width: 90%;
+  /* max-width: 1400px; */
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main-about-us .mapouter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The Footer Section
+********************************************/
+
 /* The Footer Section
 ********************************************/
 footer {
-  background-color: #e1e289ff;
+  background-color: #000352;
   padding: 1rem 0 1.5rem;
   margin: 0;
   display: flex;
@@ -174,12 +211,12 @@ footer {
 
 .contact-info h2,
 .contact-info li {
-  color: #14591dff;
+  color: #c4fdfb;
   font-size: 1rem;
 }
 
 .contact-info h2 {
-  color: #0a210fff;
+  color: white;
   margin: 10px;
   display: flex;
   align-items: center;
@@ -187,7 +224,7 @@ footer {
 }
 
 .footer-logo {
-  color: #14591dff;
+  color: #c4fdfb;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -199,7 +236,7 @@ footer {
 ********************************************/
 
 .social-icon-link {
-  color: #14591dff;
+  color: #c4fdfb;
   font-size: 24px;
 }
 
@@ -225,12 +262,12 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #99aa38ff;
+  color: #376ca9;
   transition: 0.3s ease-out;
 }
 
 .social-logo {
-  color: #14591dff;
+  color: #c4fdfb;
   justify-self: flex-start;
   margin-left: 20px;
   cursor: pointer;
@@ -243,7 +280,7 @@ footer {
 
 .website-rights {
   font-size: 1rem;
-  color: #14591dff;
+  color: #c4fdfb;
 }
 @media screen and (max-width: 960px) {
   .navbar-container {
@@ -267,16 +304,16 @@ footer {
     transition: all 0.3s ease;
     max-height: 100vh;
     z-index: -1;
-    background-color: #000000ff;
+    background-color: #000352f2;
   }
 
   .navbar-menu.active {
-    background: #e1e289ff;
+    background: #000352f2;
     top: 100%;
     opacity: 1;
     transition: all 0.3s ease;
     z-index: 8;
-    height: 100vh;
+    height: 50vh;
     font-size: 1.8rem;
   }
 
@@ -289,7 +326,7 @@ footer {
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #14591dff;
+    background: #c4fdfb;
   }
 
   .navbar-item {
@@ -300,7 +337,7 @@ footer {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    display: table;
+    /* display: table; */
   }
 
   #mobile-menu {
@@ -342,6 +379,7 @@ footer {
   }
   .contact-info li {
     font-size: 1rem;
+    padding-bottom: 5px;
   }
 
   .footer-logo {
@@ -376,6 +414,14 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .social-icons {
+    padding-top: 5px;
+  }
+
+  .website-rights {
+    padding-top: 5px;
   }
 }
 

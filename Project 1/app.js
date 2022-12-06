@@ -1,6 +1,6 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar-menu')
-const buttons = document.querySelectorAll('[data-carousel-button')
+const buttons = document.querySelectorAll('[data-carousel-button]')
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
